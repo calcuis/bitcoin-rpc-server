@@ -32,7 +32,7 @@ Start Bitcoin Core with the following command:
 - macOS: Run `./Applications/Bitcoin-Qt.app/Contents/MacOS/Bitcoin-Qt` from the terminal.
 - Linux: Run `bitcoind` from the terminal.
 ### Use the RPC Interface
-Once the Bitcoin Core is running, you can use the RPC interface. You can use tools like curl, bitcoin-cli, or write scripts in your preferred programming language to interact with the Bitcoin RPC.
+Once the Bitcoin Core is running, you can use the RPC interface. You can use tools like `curl`, `bitcoin-cli`, or write scripts in your preferred programming language to interact with the Bitcoin RPC.
 ### Using curl
 Here is an example of how to use curl to make an RPC call:
 ```
