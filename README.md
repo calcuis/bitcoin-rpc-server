@@ -39,7 +39,7 @@ Here is an example of how to use curl to make an RPC call:
 curl --user your_rpc_username:your_rpc_password --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getblockchaininfo", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
 ### Using bitcoin-cli
-Bitcoin Core includes bitcoin-cli, a command-line tool to interact with the RPC server:
+Bitcoin Core includes `bitcoin-cli`, a `command-line tool` to interact with the RPC server:
 ```
 bitcoin-cli -rpcuser=your_rpc_username -rpcpassword=your_rpc_password getblockchaininfo
 ```
