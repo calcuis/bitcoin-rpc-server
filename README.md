@@ -1,12 +1,10 @@
 To run a Bitcoin RPC (Remote Procedure Call) server, you need to follow these general steps:
 
 ### Install Bitcoin Core
-   
 First, you need to install `Bitcoin Core`, the official Bitcoin client. You can download it from the [Bitcoin Core website](https://bitcoin.org/en/download).
 
 ### Initial Setup
-   
-Once installed, you'll need to set up the bitcoin.conf file with the necessary configurations. This file is typically located in the Bitcoin data directory:
+Once installed, you'll need to set up the `bitcoin.conf` file with the necessary configurations. This file is typically located in the Bitcoin data directory:
 
 - Windows: C:\Users\YourUsername\AppData\Roaming\Bitcoin\bitcoin.conf
 - macOS: ~/Library/Application Support/Bitcoin/bitcoin.conf
@@ -15,7 +13,6 @@ Once installed, you'll need to set up the bitcoin.conf file with the necessary c
 If the file doesn't exist, create it.
 
 ### Configure bitcoin.conf
-
 Add the following lines to `bitcoin.conf` to enable the RPC server:
 ```
 server=1
@@ -31,14 +28,11 @@ rpcport=8332
 
 ### Start Bitcoin Core
 Start Bitcoin Core with the following command:
-
 - Windows: Run `bitcoin-qt.exe` from the installation directory.
 - macOS: Run `./Applications/Bitcoin-Qt.app/Contents/MacOS/Bitcoin-Qt` from the terminal.
 - Linux: Run `bitcoind` from the terminal.
-
 ### Use the RPC Interface
 Once the Bitcoin Core is running, you can use the RPC interface. You can use tools like curl, bitcoin-cli, or write scripts in your preferred programming language to interact with the Bitcoin RPC.
-
 ### Using curl
 Here is an example of how to use curl to make an RPC call:
 ```
@@ -70,7 +64,6 @@ payload = json.dumps({
 response = requests.post(url, headers=headers, data=payload, auth=(rpc_user, rpc_password))
 print(response.json())
 ```
-
 ### Tips
 - Do not expose your RPC server to the internet without proper security measures like SSL/TLS and firewall rules.
 - Ensure that the RPC port is properly firewalled to prevent unauthorized access.
